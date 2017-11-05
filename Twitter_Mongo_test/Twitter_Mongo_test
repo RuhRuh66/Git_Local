@@ -1,0 +1,17 @@
+from requests_oauthlib impot OAuth1session
+from requests.exceptions import ConnectionError, ReadTimeout, SSLError
+import json, datetime, time, pytz, re,  sys, traceback, pymongo
+from　pymongo import MongoClient
+from collections import defaultdict
+import numpy as np
+
+KEYS =　{'consumer_key': '',
+'consumer_secret': '',
+'access_token': '',
+'access_secret': ''}
+
+twitter = None
+connect = None
+db =  None
+tweetdata = None
+meta = None
